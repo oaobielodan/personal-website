@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+
+@font-face { 
+    font-family: Handwriting;
+    src: url('../fonts/personal-handwriting.otf');
+}
+
+@font-face {
+    font-family: 'Lemon Tuesday';
+    src: url('../fonts/lemon-tuesday.otf');
+}
+
+@font-face {
+    font-family: 'Interior Finishing';
+    src: url('../fonts/interior-finishing.otf');
+}
+
+html {
+    background-color: #faf0e6;
+    background-size: cover;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+
+    height: 100%;
+    width: 100%;
+}
+
+.header-container {
+    position: relative;
+    height: 300px;
+
+    display: flex;
+    align-items: center; 
+}
+
+.title-descritpion {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    height: 300px;
+    width: 90%;
+
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+.title-descritpion img {
+    width: 300px;
+    height: 300px;
+
+    object-fit: contain;
+    border: 10px solid black;
+}
+
+.title-descritpion p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.naviagtion {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    font-family: 'Interior Finishing';
+    font-size: 20px;
+    color: black;
+
+    text-align: right;
+    line-height: .2;
+}
+
+.naviagtion p {
+    color: grey;
+}
+
+.naviagtion a {
+    text-decoration: none;
+    color: grey;
+    transition: color 0.3s;
+}
+
+.naviagtion a:hover {
+    color: black;
+}
+
+.main {
+    position: relative;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.process {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.process h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.process h4 {
+    font-family: 'Interior Finishing';
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.process p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.process img {
+    width: 500px;
+}

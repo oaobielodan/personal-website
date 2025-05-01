@@ -80,13 +80,13 @@ html {
     object-fit: contain;
 }
 
-.navigation{
+.navigation {
     position: absolute;
     right: 15px;
     top: 25px;
 }
 
-.navigation a{
+.navigation a {
     margin-right: 30px;
 
     font-family: 'Interior Finishing';
@@ -98,7 +98,7 @@ html {
     transition: color 0.3s;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     text-shadow: #ffc200 1px 0 10px;
 }
 

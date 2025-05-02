@@ -2,17 +2,17 @@
 
 @font-face { 
     font-family: Handwriting;
-    src: url('../fonts/personal-handwriting.otf');
+    src: url('./fonts/personal-handwriting.otf');
 }
 
 @font-face {
     font-family: 'Lemon Tuesday';
-    src: url('../fonts/lemon-tuesday.otf');
+    src: url('./fonts/lemon-tuesday.otf');
 }
 
 @font-face {
     font-family: 'Interior Finishing';
-    src: url('../fonts/interior-finishing.otf');
+    src: url('./fonts/interior-finishing.otf');
 }
 
 html {
@@ -68,11 +68,10 @@ html {
     color: black;
 
     text-align: right;
-    line-height: .2;
-}
-
-.naviagtion p {
-    color: grey;
+    line-height: 1.2;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .naviagtion a {

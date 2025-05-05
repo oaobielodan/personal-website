@@ -24,9 +24,9 @@
                     too dry, the picture is broken up and not fully visible. However, whenever the user waters their
                     plant and the moisture level returns to where it needs to be, the picture fixes itself and can be
                     plainly seen. If the moisture level of the soil goes above the dry threshold again the picture will
-                    go back to being broken up. 
+                    go back to being broken up. <br><br>
+                    <span class="font-weight: 500;">Link to published video: </span><a href="https://youtu.be/lZ4R_DhNbJY?si=Bu9zOT8worvJ427f" target="_blank">https://youtu.be/lZ4R_DhNbJY?si=Bu9zOT8worvJ427f</a>
                 </p>
-                <p><b>link to published video:</b><a href="https://youtu.be/lZ4R_DhNbJY?si=Bu9zOT8worvJ427f" target="_blank">shape-changing future interaction</a></p>
             </div>
         </div>
         
@@ -37,14 +37,46 @@
     </div>
 
     <div class="main">
-        <div class="process">
-            <!-- <h3>Process</h3>
-            <p>coming soon</p> -->
+        <div class="content">
+            <h3>Process</h3>
+
+            <!-- <h4>Idea and Concept</h4>
+            <p>
+                The idea for my project was to create a shape-changing flowerpot that would help users understand the current health 
+                of their plants. In the end, I created a notification system that visually showed users when the soil in their planter 
+                was too dry for their plants. The final product was a planter stand that has a picture attached to it. When the moisture 
+                level of the plant soil is too dry, the picture is broken up and not fully visible. However, whenever the user waters 
+                their plant and the moisture level returns to where it needs to be, the picture fixes itself and can be plainly seen. If 
+                the moisture level of the soil goes above the dry threshold again the picture will go back to being broken up. 
+            </p> -->
+
+            <h4>Technical Detail</h4>
+            <p>
+                The mechanism that matters the most in this system is that of the picture. I modeled this shape-changing aspect after the 
+                following art piece: <a href="https://youtu.be/Vp-oMC8DCPs" target="_blank">https://youtu.be/Vp-oMC8DCPs</a>. I recreated 
+                this using 3D printed blocks that were duck taped at the hinges. A string that was connected to one of the blocks and then 
+                connected to a small pole attached to a servo motor. The idea was that his string would pull the picture mechanism so that 
+                it would essential rotate around a singular stationary block. 
+            </p>
+
+            <p>
+                The system used a soil moisture sensor to read the moisture level of the soil in the planer. If the dryness level is above 
+                a certain threshold, the servo will rotate to the left 180 degrees, pulling the string and causing the picture to move. The 
+                inverse is also true, if the dryness level is below a certain threshold, the servo will rotate to the right 180 degree, 
+                releasing the string and moving the picture back in place. This threshold can be set by the user to correspond to their 
+                specific plant. 
+            </p>
+
+            <p class="label">circuit diagrams</p>
+            <img src="circuit-diagram1.png">
+            
+            <br>
+            <img src="circuit-diagram2.png">
 
             <h3>Visuals</h3>
 
-            <img src="presentation setup.png">
-            <p>presentation setup</p>
+            <p class="label">presentation setup</p>
+            <img src="presentation-setup.png">
         </div>
     </div>
 

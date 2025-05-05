@@ -122,7 +122,8 @@ html {
 }
 
 .about p {
-    width: 800px;
+    width: 1000px;
+    font-size: 25px;
 }
 
 .portfolio .preview {

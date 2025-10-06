@@ -1,10 +1,5 @@
 * { box-sizing: border-box; }
 
-@font-face { 
-    font-family: Handwriting;
-    src: url('./fonts/personal-handwriting.otf');
-}
-
 @font-face {
     font-family: 'Lemon Tuesday';
     src: url('./fonts/lemon-tuesday.otf');
@@ -15,10 +10,20 @@
     src: url('./fonts/interior-finishing.otf');
 }
 
+@font-face { 
+    font-family: Cardo;
+    src: url('./fonts/Cardo-Regular.ttf');
+}
+
+@font-face { 
+    font-family: DidactGothic;
+    src: url('./fonts/DidactGothic-Regular.ttf');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
-    background-color: #faf0e6;
+    background-color: #f1f0f0;
     background-size: cover;
     background-size: 100% 100vh;
     background-attachment: fixed;
@@ -59,7 +64,7 @@ html {
 .descritpion .descript-title {
     margin: 3px auto;
     
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cardo', 'Montserrat', sans-serif;
     font-size: 35px;
     font-weight: 600;
 
@@ -68,7 +73,7 @@ html {
 }
 
 .descritpion .descript-short {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DidactGothic', 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 300;
 
@@ -117,7 +122,7 @@ html {
 }
 
 .content h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cardo', 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 500;
 
@@ -125,13 +130,13 @@ html {
 }
 
 .content h4 {
-    font-family: 'Interior Finishing', 'Montserrat', sans-serif;
+    font-family: 'Cardo', 'Montserrat', sans-serif;
     font-size: 25px;
     letter-spacing: 3px;
 }
 
 .content p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DidactGothic', 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 300;
 
@@ -146,7 +151,7 @@ html {
 .content ul {
     margin: 0 auto;
     
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DidactGothic', 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 300;
 

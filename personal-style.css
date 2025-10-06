@@ -1,22 +1,17 @@
 * { box-sizing: border-box; }
 
 @font-face { 
-    font-family: Handwriting;
-    src: url('./fonts/personal-handwriting.otf');
+    font-family: Cardo;
+    src: url('./fonts/Cardo-Regular.ttf');
 }
 
-@font-face {
-    font-family: 'Lemon Tuesday';
-    src: url('./fonts/lemon-tuesday.otf');
-}
-
-@font-face {
-    font-family: 'Interior Finishing';
-    src: url('./fonts/interior-finishing.otf');
+@font-face { 
+    font-family: DidactGothic;
+    src: url('./fonts/DidactGothic-Regular.ttf');
 }
 
 html {
-    background-color: #faf0e6;
+    background-color: #f1f0f0;
     background-size: cover;
     background-size: 100% 100vh;
     background-attachment: fixed;
@@ -25,168 +20,95 @@ html {
     width: 100%;
 }
 
-.header-container {
-    position: relative;
+.intro .name {
+    font-family: 'Cardo', serif;
+    font-size: 130px;
 
-    display: flex;
-    align-items: center; 
+    text-indent: 50px;
+    margin: 50px 0 0 0;
 }
 
-.name-plate {
-    margin: 0;
-    padding: 15px;
-    width: 100%;
-    height: 600px;
-    
-    background: #E67FAC;
-    background: linear-gradient(90deg, rgba(230, 127, 172, 0.14) 0%, rgba(230, 127, 172, 0.35) 25%, rgba(255, 123, 172, 0.66) 50%, rgba(255, 123, 172, 0.96) 75%, rgba(255, 123, 172, 1) 100%);
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-}
+.intro .title {
+    font-family: 'DidactGothic', serif;
+    font-size: 72px;
 
-.name-plate .first-name {
-    font-family: 'Lemon Tuesday';
-    font-size: 185px;
-    
-    text-indent: -300px;
-    line-height: 1.8;
+    text-indent: 325px;
+    line-height: .5;
+    letter-spacing: 8px;
+
     margin: 0;
 }
 
-.name-plate .last-name {
-    font-family: 'Interior Finishing';
-    font-size: 190px;
-    
-    text-indent: 300px;
-    letter-spacing: 40px;
-    margin: 0;
-}
-
-
-.sticker {
-    position: absolute;
-    top: 250px;
-    left: -10px;
-    width: 450px;
-}
-
-.sticker img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.navigation {
-    position: absolute;
-    right: 15px;
-    top: 25px;
-}
-
-.navigation a {
-    margin-right: 30px;
-
-    font-family: 'Interior Finishing';
-    font-size: 20px;
-    color: black;
-
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.navigation a:hover {
-    text-shadow: #ffc200 1px 0 10px;
-}
-
-.main {
-    padding-left: 120px;
-    padding-right: 100px;
-    padding-top: 50px;
-    margin: 0 auto;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-
-    text-align: justify;
-    line-height: 1.3;
-}
-  
-.section {
-    margin-bottom: 2rem;
-}
-
-.section h3 {
-    font-family: 'Lemon Tuesday';
-    font-size: 25px;
-}
-
-.about p {
-    width: 1000px;
-    font-size: 25px;
-}
-
-.portfolio .preview {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr;
-    column-gap: 100px;
-
-    overflow-x: auto; 
-    overflow-y: hidden;
-
-    width: 100%;
-}
-
-.portfolio .preview .pre {
-    background-size: cover;
-    background-position: center;
-    width: 500px;
-    height: 500px;
-    filter: grayscale(100%);
-}
-
-.portfolio .preview .pre:hover {
-    filter: grayscale(0%);
-}
-
-.contact .content {
+.intro .pic-descript {
     display: flex;
-    align-items: center;
-    gap: 75px; 
-}
-
-.contact .box {
-    display: inline-block;
-    border: 5px solid #ffc200;
-    padding: 30px;
-    margin: 10px;
-    width: 200px;
-    height: 269px;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    margin: 100px 150px 150px 100px;
 }
 
-.contact .inner-box {
-    display: block;
-    border: 5px solid #ffc200;
-    width: 200px;
-    height: 269px;
+.intro .pic-descript .portrait {
+    border-radius: 50%;
+    height: 500px;
 }
 
-.contact .inner-box img {
-    display: block;
-    width: 200px;
+.intro .pic-descript .description {
+    font-family: 'Cardo', serif;
+    font-size: 40px;
+
+    margin-left: 50px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
+.portfolio .title {
+    font-family: 'Cardo', serif;
+    font-size: 75px;
+
+    text-indent: 100px;
 }
 
-/* pinks: #e67fac, #ff7bac */
+.portfolio .clickable-card {
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio .preview-card {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    margin: 100px 150px 150px 100px;
+    padding: 25px;
+
+    border: 5px solid black;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio .preview-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* .portfolio .preview-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+} */
+
+.portfolio .preview-card .thumbnail {
+    border-radius: 30px;
+    width: 500px;
+}
+
+.portfolio .preview-card .detail {
+    font-family: 'DidactGothic', serif;
+    font-size: 125px;
+
+    padding-left: 50px;
+}

@@ -10,81 +10,60 @@
 </head>
 
 <body>
-    <div class="header-container">
-        <div class="name-plate">
-            <p class="first-name">Olufunmilola</p>
-            <p class="last-name">Obielodan</p>
-        </div>
-
-        <div class = "sticker">
-            <img src="./images/computer-person-removebg.png">
-        </div>
-
-        <div class="navigation ">
-            <a href="#about">about</a>
-            <a href="#portfolio">work</a>
-            <a href="#contact">contact</a>
-        </div>
-    </div>
-
-    <div class="main">
-        <div class="section about" id="about">
-            <h3>about me</h3>
-            <p> 
+   
+    <div class="intro" id="about">
+        <p class="name">Olufunmilola Obielodan</p>
+        <p class="title">Creative Technologist</p>
+        <div class="line"></div>
+        <div class="pic-descript">
+            <img class="portrait" src="./images/lola-portrait-square.png" alt="Me">
+            <p class="description"> 
                 Olufunmilola Obielodan is a creative technologist whose work is driven by two simple goals: 
-                to <b>understand user needs</b> and <b>promote inclusivity in technology</b>. She is currently 
-                completing her master's degree in Human-Computer Interaction at the Georgia Institute of Technology.
-                She graduated with her Bachelor of Science in Computer Science from the University of Chicago with a 
-                minor in Media Arts and Design in June of 2025. Her work explores different ways technology can be 
-                used to create a more user-centered environment. 
+                to <b>understand user needs</b> and <b>promote inclusivity in technology</b>. Her work 
+                explores different ways technology can be used to create a more user-centered environment. 
             </p>
         </div>
-
-        <div class="section portfolio" id="portfolio">
-            <h3>my portfolio</h3>
-            <div class="preview">
-                <a href="./shape-changing-future-interaction/index.html">
-                    <div class="pre" style="background-image: url('./images/shape-change-thumbnail.png');"></div>
-                </a>
-                <a href="./tangible-and-actuated-data/index.html">
-                    <div class="pre" style="background-image: url('./images/tangible-data-thumbnail.png');"></div>
-                </a>
-                <a href="./everday-devices-actuated/index.html">
-                    <div class="pre" style="background-image: url('./images/devices-actuated-thumbnail.png');"></div>
-                </a>
-                <a href="./audio-pong/index.html">
-                    <div class="pre" style="background-image: url('./images/audio-pong-thumbnail.png');"></div>
-                </a>
-                <a href="./diving-simulator-interface/index.html">
-                    <div class="pre" style="background-image: url('./images/diving-simulator-thumbnail.png');"></div>
-                </a>
-                <a href="./eyes-free-mesaging/index.html">
-                    <div class="pre" style="background-image: url('./images/eyesfree-messaging-thumbnail.png');"></div> 
-                </a>
-                <a href="./musical-scenes/index.html">
-                    <div class="pre" style="background-image: url('./images/muscial-scenes/musical-scenes-thumbnail.png');"></div>
-                </a>
-            </div>
-        </div>
-
-        <div class="section contact" id="contact">
-            <h3>contact me!</h3>
-            <div class="content">
-                <div class="box">
-                    <div class="inner-box">
-                        <img  src="./images/lola-portrait.png" alt="Picture of me!">
-                    </div>
-                </div>
-                <p>
-                    LinkedIn: <a href="//www.linkedin.com/in/olufunmilola-obielodan/" target="_blank">https://www.linkedin.com/in/olufunmilola-obielodan/</a>
-                    <br><br>
-                    Email: olufunmilolaobielodan@gmail.com
-                </p>
-            </div>
-        </div>
     </div>
 
-    <footer></footer>
+    <div class="portfolio" id="portfolio">
+        <p class="title">Portfolio</p>
+        <div class="line"></div>
+
+        <a href="./shape-changing-future-interaction/index.html" class="clickable-card"><div class="preview-card">
+            <img class="thumbnail" src="./images/shape-change-thumbnail.png" alt="thumbnail">
+            <p class="detail">
+                adapti-pot
+            </p>
+        </div></a>
+
+        <a href="./everday-devices-actuated/index.html" class="clickable-card"><div class="preview-card">
+            <img class="thumbnail" src="./images/devices-actuated-thumbnail.png" alt="thumbnail">
+            <p class="detail">
+                everday-devices-actuated
+            </p>
+        </div></a>
+
+        <a href="./audio-pong/index.html" class="clickable-card"><div class="preview-card">
+            <img class="thumbnail" src="./images/audio-pong-thumbnail.png" alt="thumbnail">
+            <p class="detail">
+                audio pong
+            </p>
+        </div></a>
+
+        <a href="./diving-simulator-interface/index.html" class="clickable-card"><div class="preview-card">
+            <img class="thumbnail" src="./images/diving-simulator-thumbnail.png" alt="thumbnail">
+            <p class="detail">
+                diving-simulator-interface
+            </p>
+        </div></a>
+
+       <a href="./eyes-free-mesaging/index.html" class="clickable-card"><div class="preview-card">
+            <img class="thumbnail" src="./images/eyesfree-messaging-thumbnail.png" alt="thumbnail">
+            <p class="detail">
+                eyes-free-mesaging
+            </p>
+        </div></a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
     <script src="./personal-script.js"></script>

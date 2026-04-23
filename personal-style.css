@@ -103,12 +103,12 @@ html {
 
 .portfolio .preview-card .thumbnail {
     border-radius: 30px;
-    width: 500px;
+    width: 400px;
 }
 
 .portfolio .preview-card .detail {
     font-family: 'DidactGothic', serif;
-    font-size: 125px;
+    font-size: 100px;
 
     padding-left: 50px;
 }
